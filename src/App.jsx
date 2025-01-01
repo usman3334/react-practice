@@ -1,24 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SignIn from './Pages/Auth/SignIn';
-import SignUp from './Pages/Auth/SignUp';
-import UserDashboard from './Pages/User/UserDashboard';
-import AdminDashboard from './Pages/Admin/AdminDashboard';
-import CardDetail from './Components/CardDetail';
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './Routes';
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/user/dashboard" element={<UserDashboard />} />
-        <Route path="/user/dashboard/card/:id" element={<CardDetail />} />
-      </Routes>
+      <AppRoutes />
     </Router>
   );
 }
 
 export default App;
+
