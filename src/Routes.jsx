@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes as AppRoutes, Route } from 'react-router-dom';
-import SignIn from './Pages/Auth/SignIn';
-import SignUp from './Pages/Auth/SignUp';
-import UserDashboard from './Pages/User/UserDashboard';
-import AdminDashboard from './Pages/Admin/AdminDashboard';
+import SignIn from './pages/auth/SignIn';
+import SignUp from './pages/auth/SignUp';
+import UserDashboard from './pages/user/UserDashboard';
+import AdminDashboard from './pages/admin/AdminDashboard';
 import CardDetail from './components/CardDetail';
 
 const Routes = () => {
